@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity() {
 
         button?.setOnClickListener()
         {
-            if (heightView?.text.toString().isEmpty() || weightView?.text.toString().isEmpty() || ageView?.text.toString().isEmpty())
+            if (heightView?.text.toString().isEmpty() || weightView?.text.toString().isEmpty() ||
+                ageView?.text.toString().isEmpty() || nameView?.text.toString().isEmpty())
             {
                 answerText?.setTextColor(Color.parseColor("#FF0000"))
                 answerText?.setText("Данные введены некорректно.")
@@ -39,12 +40,11 @@ class MainActivity : AppCompatActivity() {
             else
             {
                 val height = heightView?.text.toString().toInt()
-                val weight = weightView?.text.toString().toInt()
+                val weight = weightView?.text.toString().toDouble()
                 val age = ageView?.text.toString().toInt()
+                val nameLen = nameView?.text.toString().length
 
                 val allow = ((0 < height && height < 250) && (0 < weight && weight < 250) && (0 < age && age < 150))
-
-                val answer = (height + weight) * age
 
                 if (!allow)
                 {
@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 else
                 {
+                    val answer = (height + weight + nameLen) * age
                     val str = "Ответ: $answer"
                     answerText?.setText(str)
                     answerText?.setTextColor(Color.parseColor("#008001"))
