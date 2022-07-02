@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/spaceFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_center_focus_strong_24"
+        android:title="@string/menu_space" />
+    <item
+        android:id="@+id/mindFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_emoji_objects_24"
+        android:title="@string/menu_mind" />
+    <item
+        android:id="@+id/powerFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_sports_basketball_24"
+        android:title="@string/menu_power" />
+    <item
+        android:id="@+id/timeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_snooze_24"
+        android:title="@string/menu_time" />
+    <item
+        android:id="@+id/realityFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_vpn_lock_24"
+        android:title="@string/menu_reality" />
+
+</menu>

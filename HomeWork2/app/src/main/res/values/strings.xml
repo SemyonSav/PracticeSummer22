@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HomeWork2</string>
+
+    <string name="menu_space">Space</string>
+    <string name="menu_mind">Mind</string>
+    <string name="menu_power">Power</string>
+    <string name="menu_time">Time</string>
+    <string name="menu_reality">Reality</string>
+</resources>

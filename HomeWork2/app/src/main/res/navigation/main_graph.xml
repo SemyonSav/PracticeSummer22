@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/spaceFragment">
+
+    <fragment
+        android:id="@+id/spaceFragment"
+        android:name="com.example.homework2.SpaceFragment"
+        android:label="SpaceFragment" >
+        <action
+            android:id="@+id/action_spaceFragment_to_gauntletFragment"
+            app:destination="@id/gauntletFragment" />
+        <action
+            android:id="@+id/action_spaceFragment_to_mindFragment"
+            app:destination="@id/mindFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gauntletFragment"
+        android:name="com.example.homework2.GauntletFragment"
+        android:label="GauntletFragment" />
+    <fragment
+        android:id="@+id/mindFragment"
+        android:name="com.example.homework2.MindFragment"
+        android:label="MindFragment" >
+        <action
+            android:id="@+id/action_mindFragment_to_gauntletFragment"
+            app:destination="@id/gauntletFragment" />
+        <action
+            android:id="@+id/action_mindFragment_to_powerFragment"
+            app:destination="@id/powerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/powerFragment"
+        android:name="com.example.homework2.PowerFragment"
+        android:label="PowerFragment" >
+        <action
+            android:id="@+id/action_powerFragment_to_gauntletFragment"
+            app:destination="@id/gauntletFragment" />
+        <action
+            android:id="@+id/action_powerFragment_to_timeFragment"
+            app:destination="@id/timeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/realityFragment"
+        android:name="com.example.homework2.RealityFragment"
+        android:label="RealityFragment" >
+        <action
+            android:id="@+id/action_realityFragment_to_gauntletFragment"
+            app:destination="@id/gauntletFragment" />
+        <action
+            android:id="@+id/action_realityFragment_to_spaceFragment"
+            app:destination="@id/spaceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeFragment"
+        android:name="com.example.homework2.TimeFragment"
+        android:label="TimeFragment" >
+        <action
+            android:id="@+id/action_timeFragment_to_gauntletFragment"
+            app:destination="@id/gauntletFragment" />
+        <action
+            android:id="@+id/action_timeFragment_to_realityFragment"
+            app:destination="@id/realityFragment" />
+    </fragment>
+</navigation>
