@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/spaceFragment"
-        android:name="com.example.homework2.SpaceFragment"
+        android:name="com.example.homework2.MainFragment"
         android:label="SpaceFragment" >
         <action
             android:id="@+id/action_spaceFragment_to_gauntletFragment"
@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_spaceFragment_to_mindFragment"
             app:destination="@id/mindFragment" />
+        <action
+            android:id="@+id/action_spaceFragment_to_cityInfoFragment"
+            app:destination="@id/cityInfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/gauntletFragment"
@@ -63,4 +66,8 @@
             android:id="@+id/action_timeFragment_to_realityFragment"
             app:destination="@id/realityFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/cityInfoFragment"
+        android:name="com.example.homework2.CityInfoFragment"
+        android:label="CityInfoFragment" />
 </navigation>
